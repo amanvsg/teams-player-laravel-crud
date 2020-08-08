@@ -1,33 +1,19 @@
-# team-players-vuejs-laravel-test-app
+# team-players
 
-> 1) Please use Laravel and Vue.js
+create your .env file
+and copy paste the .env.example 
+create a new new database and provide the name and creadentials in the .env file
 
-==================
+composer install 
+npm install && run dev
 
-Create a REST API to model sports teams and their players. Also create a U/I to show functionality.
+php artisan migrate
+php artisan db:seed
+php artisan key:generate
+php artisan serve
 
-Be sure to include the following elements:
+register as a new user and start using the app....
 
-* migration for adding the teams table
-* migration for adding the players table
-* seed script to fill the tables with some data
-* API endpoint to add a team
-* API endpoint to add a player
-* API endpoint to update a player
-* API endpoint to get a team and its players
-* Bonus: authentication method so only trusted entities may call the APIs
 
-Schema for teams table (you may add additional fields as needed):
 
-* id
-* name
-* created_at
-* updated_at
 
-Schema for players table (you may add additional fields as needed):
-
-* id
-* first_name
-* last_name
-* created_at
-* updated_at
